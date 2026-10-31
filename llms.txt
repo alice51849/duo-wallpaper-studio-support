@@ -1,0 +1,17 @@
+# Foldable Wallpaper Studio support
+
+> Official support, help and privacy pages for Foldable Wallpaper Studio, an iOS app by Lumi Studio.
+
+- App Store: https://apps.apple.com/app/id6824946559
+- Platform: iOS
+- App Store category: Graphics & Design
+- Developer: Lumi Studio
+
+## Pages
+
+- [Home](https://open.cait518.cc/duo-wallpaper-studio-support/)
+- [Support and contact](https://open.cait518.cc/duo-wallpaper-studio-support/support.html)
+- [Privacy policy](https://open.cait518.cc/duo-wallpaper-studio-support/privacy.html)
+- [Terms of use](https://open.cait518.cc/duo-wallpaper-studio-support/terms.html)
+
+<!-- ls-llms: managed by support_network/gen_support_crosspromo.py -->

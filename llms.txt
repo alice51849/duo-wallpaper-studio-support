@@ -10,6 +10,10 @@
 ## Pages
 
 - [Home](https://open.cait518.cc/duo-wallpaper-studio-support/)
+- [About: what it is, who it is for, how it is paid for, how it differs](https://open.cait518.cc/duo-wallpaper-studio-support/about.html)
+- [About (日本語)](https://open.cait518.cc/duo-wallpaper-studio-support/about.ja.html)
+- [About (简体中文)](https://open.cait518.cc/duo-wallpaper-studio-support/about.zh-Hans.html)
+- [About (繁體中文)](https://open.cait518.cc/duo-wallpaper-studio-support/zh-Hant/about.html)
 - [Help, FAQ and troubleshooting](https://open.cait518.cc/duo-wallpaper-studio-support/help.html)
 - [Support and contact](https://open.cait518.cc/duo-wallpaper-studio-support/support.html)
 - [Privacy policy](https://open.cait518.cc/duo-wallpaper-studio-support/privacy.html)

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>折叠屏壁纸尺寸与比例：外屏 1398 x 2034、内屏 2853 x 2007，为什么一张图放不好</title>
+<meta name="description" content="折叠屏壁纸尺寸怎么定？外屏竖长、内屏宽比高长，比例差约一倍。列出外屏、内屏的导出像素与比例，说明为什么一张图会被裁掉或放大，以及分别出图的做法。">
+<link rel="canonical" href="https://open.cait518.cc/duo-wallpaper-studio-support/zhedieping-bizhi-chicun.zh-Hans.html">
+<meta property="og:title" content="折叠屏壁纸尺寸与比例：外屏 1398 x 2034、内屏 2853 x 2007，为什么一张图放不好">
+<meta property="og:description" content="折叠屏壁纸尺寸怎么定？外屏竖长、内屏宽比高长，比例差约一倍。列出外屏、内屏的导出像素与比例，说明为什么一张图会被裁掉或放大，以及分别出图的做法。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://open.cait518.cc/duo-wallpaper-studio-support/zhedieping-bizhi-chicun.zh-Hans.html">
+<meta name="apple-itunes-app" content="app-id=6824946559">
+<meta property="og:locale" content="zh_CN">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf8;--fg:#1f2328;--muted:#5b6168;--line:rgba(127,127,127,.28);--ours:rgba(255,196,0,.16)}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--fg:#e8e8e6;--muted:#a3a7ad;--line:rgba(160,160,160,.3);--ours:rgba(255,196,0,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 16px 56px}
+a{color:inherit}
+.nav{font-size:14px;margin:0 0 18px}
+h1{font-size:26px;line-height:1.3;margin:0 0 14px}
+h2{font-size:19px;margin:30px 0 10px}
+.tbl{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+caption{text-align:start;padding:10px 12px;font-size:13px;color:var(--muted)}
+th,td{padding:9px 12px;border-top:1px solid var(--line);text-align:start;vertical-align:top}
+th{font-weight:600;white-space:nowrap}
+td:nth-child(1),td:nth-child(4),td:nth-child(5),td:nth-child(7){white-space:nowrap}
+tr.ours td{background:var(--ours)}
+.tag{display:inline-block;margin-inline-start:6px;padding:0 8px;border:1px solid currentColor;border-radius:999px;font-size:12px;opacity:.85;white-space:nowrap}
+.tips li{margin:0 0 10px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.card{border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:16px 0}
+ol li,ul li{margin:0 0 8px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hans", "mainEntity": [{"@type": "Question", "name": "折叠屏壁纸是什么尺寸？", "acceptedAnswer": {"@type": "Answer", "text": "Foldable Wallpaper Studio 的 App Store 版按两块屏幕分别导出：外屏 1398 x 2034 像素，内屏 2853 x 2007 像素，保存为两张图到“照片”。其他机型由 iOS 缩放。"}}, {"@type": "Question", "name": "外屏和内屏的比例差多少？", "acceptedAnswer": {"@type": "Answer", "text": "外屏 1398 x 2034 是竖长的，宽高比约 0.69 : 1；内屏 2853 x 2007 反而宽比高长，约 1.42 : 1，接近方形偏横。所以同一张图很难同时放好。"}}, {"@type": "Question", "name": "为什么我的壁纸在内屏变模糊或被放大？", "acceptedAnswer": {"@type": "Answer", "text": "内屏宽而且像素多，一张竖长的手机壁纸要铺满内屏，系统只能放大并裁掉上下，主体容易被切掉、画面也会变糊。为内屏单独出一张 2853 x 2007 的图就能避免。"}}, {"@type": "Question", "name": "自己的照片也能按这个尺寸导出吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。在应用里用自己的照片做一对，拖动设定焦点，同样导出外屏、内屏两张图。未购买时，用照片做的壁纸保存时带小水印。"}}]}</script>
+<!-- ls-pwa:start -->
+<link rel="manifest" href="/duo-wallpaper-studio-support/manifest.webmanifest">
+<!-- ls-pwa:end -->
+<!-- ls-sharecard:start -->
+<meta property="og:site_name" content="Foldable Wallpaper Studio">
+<meta property="og:image" content="https://open.cait518.cc/duo-wallpaper-studio-support/assets/og.png?v=646124a130">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Foldable Wallpaper Studio — Dual Screen Pairs for Duo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="max-image-preview:large">
+<!-- ls-sharecard:end -->
+</head>
+<body>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">本站由 Lumi Studio 维护，页面介绍的应用由我们开发。</p>
+<main>
+<p class="nav"><a href="./">支持首页</a> · <a href="https://apps.apple.com/cn/app/id6824946559?ct=sqb1118_duowallpaperstudio_cn_chicun">App Store</a></p>
+<h1>折叠屏壁纸尺寸与比例：外屏、内屏各多大，为什么一张图放不好</h1>
+<p class="cta"><a class="btn" href="https://apps.apple.com/cn/app/id6824946559?ct=sqb1118_duowallpaperstudio_cn_chicun">在 App Store 查看 Foldable Wallpaper Studio</a></p>
+<p>在找折叠屏壁纸尺寸、想自己裁一张图？先看两块屏幕的比例：外屏竖长、内屏宽比高长，差得很多。同一张图放上去，不是外屏裁掉主体，就是内屏被放大、变糊。下面列出导出的精确像素和比例，再说怎么让两块屏幕都好看。</p>
+<h2>外屏、内屏的尺寸与比例</h2>
+<div class="tbl"><table style="min-width:0">
+<caption>Foldable Wallpaper Studio App Store 版的导出尺寸（依 App Store 说明）</caption>
+<tr><th>屏幕</th><th>导出像素</th><th>宽高比（约）</th><th>形状</th></tr>
+<tr><td>外屏（合上时）</td><td>1398 x 2034</td><td>0.69 : 1</td><td>竖长</td></tr>
+<tr><td>内屏（展开时）</td><td>2853 x 2007</td><td>1.42 : 1</td><td>宽比高长，接近方形偏横</td></tr>
+</table></div>
+<p class="note">以上是应用导出的精确像素；其他机型由 iOS 缩放。</p>
+<h2>为什么一张图放不好</h2>
+<ul class="tips">
+<li><strong>竖图放到内屏：</strong>要铺满宽的内屏，只能放大再裁掉上下，主体容易被切掉，细节也会糊。</li>
+<li><strong>横图放到外屏：</strong>外屏窄长，只留下中间一条，两边的风景都没了。</li>
+<li><strong>硬拉成同一张：</strong>两块屏幕比例差约一倍，怎么裁都会有一边吃亏。</li>
+</ul>
+<h2>按尺寸分别出图的做法</h2>
+<ol>
+<li>挑一组原创成对壁纸（300 组以上、14 种风格），或用自己的照片做一对，拖动设定焦点。</li>
+<li>在应用里对照合上、展开两种预览，需要的话换颜色、加一行短字。</li>
+<li>保存：外屏 1398 x 2034、内屏 2853 x 2007 两张图存到“照片”（只需“仅添加”权限）。</li>
+<li>iOS 不允许应用自动更换壁纸，保存后按应用“设置”页的步骤，把两张图分别设到对应的屏幕。</li>
+</ol>
+<p>未购买时可直接使用所有工具与 5 组壁纸，这 5 组和用照片做的壁纸保存时带小水印；Duo Pro 是一次性 App 内购买（不是订阅），解锁其余套组并去除水印。没有广告、账号、追踪，照片只留在你的设备上。</p>
+<p class="cta"><a class="btn" href="https://apps.apple.com/cn/app/id6824946559?ct=sqb1118_duowallpaperstudio_cn_chicun">在 App Store 查看 Foldable Wallpaper Studio</a></p>
+<h2>常见问题</h2>
+<p><strong>折叠屏壁纸是什么尺寸？</strong><br>Foldable Wallpaper Studio 的 App Store 版按两块屏幕分别导出：外屏 1398 x 2034 像素，内屏 2853 x 2007 像素，保存为两张图到“照片”。其他机型由 iOS 缩放。</p>
+<p><strong>外屏和内屏的比例差多少？</strong><br>外屏 1398 x 2034 是竖长的，宽高比约 0.69 : 1；内屏 2853 x 2007 反而宽比高长，约 1.42 : 1，接近方形偏横。所以同一张图很难同时放好。</p>
+<p><strong>为什么我的壁纸在内屏变模糊或被放大？</strong><br>内屏宽而且像素多，一张竖长的手机壁纸要铺满内屏，系统只能放大并裁掉上下，主体容易被切掉、画面也会变糊。为内屏单独出一张 2853 x 2007 的图就能避免。</p>
+<p><strong>自己的照片也能按这个尺寸导出吗？</strong><br>可以。在应用里用自己的照片做一对，拖动设定焦点，同样导出外屏、内屏两张图。未购买时，用照片做的壁纸保存时带小水印。</p>
+<p class="related">相关页面：<a href="zhedieping-zhaopian-bizhi.zh-Hans.html">折叠屏照片壁纸</a> · <a href="zhedieping-bizhi.zh-Hans.html">折叠屏壁纸总览</a> · <a href="zhedieping-shouji-bizhi.zh-Hans.html">折叠屏手机壁纸</a> · <a href="shuangping-bizhi.zh-Hans.html">双屏壁纸</a> · <a href="waiping-bizhi.zh-Hans.html">外屏壁纸</a></p>
+<p class="note">本页功能说明取自 Foldable Wallpaper Studio 的 App Store 页面，可能随更新而变化。最后更新：2026-11-18。</p>
+</main>
+<p style="margin:18px auto 0;max-width:1060px;text-align:center;font-size:12px;opacity:.72"><a href="https://apps.apple.com/cn/app/id6824946559?action=write-review" rel="noopener" data-app-store-review="owner" style="color:inherit;text-decoration:underline">已经在用这款应用？欢迎在 App Store 评分或写评论</a></p>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foldable Wallpaper Size Calculator: Cover and Inner Screen</title>
+<meta name="description" content="Free calculator for fold and flip phones: enter your cover screen and inner screen resolution and get the exact pixel size, aspect ratio and crop for each wallpaper, plus the size of one picture that can fill both screens.">
+<link rel="canonical" href="https://open.cait518.cc/duo-wallpaper-studio-support/foldable-wallpaper-size-calculator.html">
+<meta property="og:title" content="Foldable Wallpaper Size Calculator: Cover and Inner Screen">
+<meta property="og:description" content="Enter your cover and inner screen resolution and get the exact wallpaper size, aspect ratio and crop for each screen, cut from one picture.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://open.cait518.cc/duo-wallpaper-studio-support/foldable-wallpaper-size-calculator.html">
+<meta name="apple-itunes-app" content="app-id=6824946559">
+<meta property="og:locale" content="en_US">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf8;--fg:#1f2328;--muted:#5b6168;--line:rgba(127,127,127,.28);--accent:#c58a00;--soft:rgba(255,196,0,.14);--inner:rgba(80,140,255,.18);--cover:rgba(255,170,0,.30)}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--fg:#e8e8e6;--muted:#a3a7ad;--line:rgba(160,160,160,.3);--accent:#f0b429;--soft:rgba(255,196,0,.12);--inner:rgba(110,160,255,.20);--cover:rgba(255,180,40,.32)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 16px 56px}
+a{color:inherit}
+.nav{font-size:14px;margin:0 0 18px}
+h1{font-size:26px;line-height:1.3;margin:0 0 14px}
+h2{font-size:19px;margin:30px 0 10px}
+.card{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 16px}
+label{display:block;font-size:14px;font-weight:600;margin:0 0 4px}
+select,input[type=number]{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:transparent;color:inherit}
+input[type=range]{width:100%}
+.pair{display:flex;gap:8px;align-items:center}
+.pair span{color:var(--muted);font-size:14px}
+.out{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.box{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--soft)}
+.box b{display:block;font-size:13px;color:var(--muted);font-weight:600}
+.box .v{font-size:20px;font-weight:700}
+.box .s{font-size:13px;color:var(--muted)}
+.warn{color:#b3261e;font-size:14px}
+@media (prefers-color-scheme:dark){.warn{color:#ff8a80}}
+.diagram{display:flex;justify-content:center;margin:10px 0}
+.diagram svg{max-width:100%;height:auto}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 12px;border-top:1px solid var(--line);text-align:start;vertical-align:top}
+ol li,ul li{margin:0 0 8px}
+code{font-size:14px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "inLanguage": "en-US", "name": "Foldable Wallpaper Size Calculator", "description": "Enter your cover screen and inner screen resolution and get the exact pixel size, aspect ratio and crop for each wallpaper, plus the size of one picture that can fill both screens.", "url": "https://open.cait518.cc/duo-wallpaper-studio-support/foldable-wallpaper-size-calculator.html", "applicationCategory": "DesignApplication", "operatingSystem": "Any (runs in the browser)", "isAccessibleForFree": true, "datePublished": "2026-11-19", "dateModified": "2026-11-19"}</script>
+<!-- ls-pwa:start -->
+<link rel="manifest" href="/duo-wallpaper-studio-support/manifest.webmanifest">
+<!-- ls-pwa:end -->
+<!-- ls-sharecard:start -->
+<meta property="og:site_name" content="Foldable Wallpaper Studio">
+<meta property="og:image" content="https://open.cait518.cc/duo-wallpaper-studio-support/assets/og.png?v=646124a130">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Foldable Wallpaper Studio — wallpaper pairs for the cover and inner screen">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="max-image-preview:large">
+<!-- ls-sharecard:end -->
+</head>
+<body>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">This site is run by Lumi Studio, the developer of the apps featured. The apps we recommend here are our own.</p>
+<main>
+<p class="nav"><a href="./">Support home</a> · <a href="https://apps.apple.com/us/app/id6824946559?ct=sqb1119_duowallpaperstudio_us_sizetool">App Store</a> · <a rel="noopener" href="https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&amp;referrer=utm_source%3Dsqb1119_duowallpaperstudio_us_sizetool%26utm_campaign%3Dduowallpaperstudio">Google Play</a></p>
+<h1>Foldable wallpaper size calculator</h1>
+<p>A fold or flip phone has two screens with very different shapes, so one image rarely fits both. Type in the resolution of each screen and this calculator tells you what size to make each wallpaper, what aspect ratio to crop to, and how big one source picture needs to be so both wallpapers can come from it. Everything runs in your browser. Nothing is uploaded or stored.</p>
+
+<div class="card" id="calc">
+<div class="grid">
+<div>
+<label for="preset">Phone type</label>
+<select id="preset">
+<option value="custom">I'll type my own numbers</option>
+<option value="book" selected>Book-style foldable (example numbers)</option>
+<option value="flip">Flip phone (example numbers)</option>
+<option value="ios">Foldable iPhone (sizes the app exports)</option>
+</select>
+<p class="note" id="presetNote" style="margin:6px 0 0"></p>
+</div>
+<div>
+<label>Cover screen (outside), in pixels</label>
+<div class="pair"><input id="cw" type="number" min="100" max="10000" inputmode="numeric" aria-label="Cover screen width in pixels"><span>×</span><input id="ch" type="number" min="100" max="10000" inputmode="numeric" aria-label="Cover screen height in pixels"></div>
+<p class="note" style="margin:6px 0 0">Width × height, holding the phone closed the way you normally do.</p>
+</div>
+<div>
+<label>Inner screen (unfolded), in pixels</label>
+<div class="pair"><input id="iw" type="number" min="100" max="10000" inputmode="numeric" aria-label="Inner screen width in pixels"><span>×</span><input id="ih" type="number" min="100" max="10000" inputmode="numeric" aria-label="Inner screen height in pixels"></div>
+<p class="note" style="margin:6px 0 0">Width × height, holding the phone open the way you normally do.</p>
+</div>
+<div>
+<label for="zoom">Close-up on the cover: <span id="zoomVal"></span></label>
+<input id="zoom" type="range" min="35" max="100" step="1" value="60">
+<p class="note" style="margin:6px 0 0">How much of the scene's height the cover shows. Lower means a tighter close-up; the maximum is the largest crop that fits.</p>
+</div>
+</div>
+</div>
+
+<div aria-live="polite" id="results">
+<div class="out">
+<div class="box"><b>Cover wallpaper</b><span class="v" id="rCover"></span><span class="s" id="rCoverRatio"></span></div>
+<div class="box"><b>Inner wallpaper</b><span class="v" id="rInner"></span><span class="s" id="rInnerRatio"></span></div>
+<div class="box"><b>One source picture for both (at least)</b><span class="v" id="rMaster"></span><span class="s" id="rMasterRatio"></span></div>
+<div class="box"><b>Cover crop inside that picture</b><span class="v" id="rCrop"></span><span class="s" id="rCropNote"></span></div>
+</div>
+<p class="warn" id="rWarn" hidden></p>
+<div class="diagram"><svg id="svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Diagram of the source picture, with the inner screen area and the cover crop"></svg></div>
+<p class="note" style="text-align:center">Blue: the whole picture, used for the inner screen. Orange: the cover crop. Click or tap the picture to move the cover crop to your subject.</p>
+<p class="cta" style="justify-content:center"><a class="btn" href="https://apps.apple.com/us/app/id6824946559?ct=sqb1119_duowallpaperstudio_us_sizetool">Skip the math: get pairs on the App Store</a> <a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&amp;referrer=utm_source%3Dsqb1119_duowallpaperstudio_us_sizetool%26utm_campaign%3Dduowallpaperstudio" rel="noopener" data-ls-play="cta">Get it on Google Play</a></p>
+</div>
+
+<h2>How to read the results</h2>
+<ul>
+<li><strong>Cover and inner wallpaper:</strong> export each image at exactly your screen's pixel size. An image that matches the screen is shown as is; anything else gets scaled or cropped by the phone, and that's where heads get cut off and edges go soft.</li>
+<li><strong>Aspect ratio:</strong> if you'd rather crop in a photo editor than type pixels, lock the crop to this ratio, then resize.</li>
+<li><strong>One source picture for both:</strong> the inner screen shows the whole picture, and the cover shows a close-up cut from it. The source has to be big enough that the close-up still has as many pixels as the cover screen, otherwise the cover wallpaper is upscaled and looks blurry. A tighter close-up needs a bigger source.</li>
+<li><strong>Cover crop:</strong> the size of the box to cut from the source picture for the cover, then shrink to the cover size above.</li>
+</ul>
+
+<h2>Making one scene look good on both screens</h2>
+<ol>
+<li><strong>Start wide.</strong> The inner screen is where the whole scene lives, so pick or paint a picture with room around the subject. A photo already cropped tight to a face leaves nothing to reveal when the phone opens.</li>
+<li><strong>Give the cover one clear subject.</strong> The outside screen is small, and the clock and notifications sit on top of it. A person, a doorway, a single tree or the moon reads well there. A busy crowd doesn't.</li>
+<li><strong>Keep the subject off the fold.</strong> On a book-style phone the hinge runs down the middle of the inner screen. Put faces and text a little to one side so they don't sit on the crease.</li>
+<li><strong>Leave room for the clock.</strong> Keep the top of the cover crop calm (sky, wall, soft color) so the time stays easy to read.</li>
+<li><strong>Use the same colors on both.</strong> When the cover crop really is a piece of the inner picture, closing and opening the phone feels like zooming in and out of one design instead of switching between two wallpapers.</li>
+<li><strong>Check it on the phone.</strong> Some home screens move or crop the wallpaper a little. Set both images, look at them closed and open, and nudge the crop if something important is cut off.</li>
+</ol>
+
+<h2>Where to find your screen resolution</h2>
+<p>Your phone's spec sheet lists the resolution of each screen. On many Android phones you can also find it in Settings, under the display section or About phone. Type the numbers the way you hold the phone: for most cover screens that's narrower than tall, and for book-style inner screens it's close to square.</p>
+
+<div class="card">
+<h2 style="margin-top:0">Or let the app do the cutting</h2>
+<p>Foldable Wallpaper Studio makes wallpapers in pairs: every set has a close-up for the cover screen and the whole scene for the inner screen, both cut from the same original artwork. There are 300+ original sets in 14 styles, and you can turn your own photo into a pair and drag to set the focus. Closed and open previews show the pair on both screens before you save.</p>
+<div class="tbl"><table>
+<tr><th>On the App Store (iOS 17 or later)</th><td>Exports at exact pixel sizes: 1398 × 2034 for the cover screen and 2853 × 2007 for the inner screen, saved to Photos as two images. On other models, iOS scales the image. Five widgets drawn with your wallpaper.</td></tr>
+<tr><th>On Google Play</th><td>Saves both images of a set to your gallery; you set the cover image on the cover screen and the inner image on the inner screen. Any image also works as a regular wallpaper on a one-screen phone.</td></tr>
+</table></div>
+<p>No ads, no account, no tracking. Without a purchase you get 5 sets ready to save and can make pairs from your own photos; these saves carry a small watermark. A one-time in-app purchase unlocks every set and removes the watermark. The app does not change your wallpaper by itself: you pick the image and the screen.</p>
+<p class="cta"><a class="btn" href="https://apps.apple.com/us/app/id6824946559?ct=sqb1119_duowallpaperstudio_us_sizetool">Get it on the App Store</a> <a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.DuoWallpaperStudio&amp;referrer=utm_source%3Dsqb1119_duowallpaperstudio_us_sizetool%26utm_campaign%3Dduowallpaperstudio" rel="noopener" data-ls-play="cta">Get it on Google Play</a></p>
+</div>
+
+<p class="related">Related: <a href="wallpaper-pairs.html">Wallpaper pairs: two screens, one picture</a> · <a href="foldable-wallpaper-cover-inner-screen.html">Foldable wallpaper pairs for the cover and inner screen</a> · <a href="cover-screen-wallpaper-android.html">Cover screen wallpaper on Android</a> · <a href="https://open.cait518.cc/ios-app-guide/tools/foldable-wallpaper-pair-preview.html">Preview a pair in the browser</a> · <a href="help.html">Help</a></p>
+<p class="note">The example numbers in the phone type list are typical shapes, not any specific model; type your own phone's resolution for exact results. App features described here come from the Foldable Wallpaper Studio pages on the App Store and Google Play and may change with updates. Last updated: 2026-11-19.</p>
+</main>
+<p style="margin:18px auto 0;max-width:1060px;text-align:center;font-size:12px;opacity:.72"><a href="https://apps.apple.com/us/app/id6824946559?action=write-review" rel="noopener" data-app-store-review="owner" style="color:inherit;text-decoration:underline">Already using the app? Rate it or write a review on the App Store</a></p>
+<script>
+(function(){
+  var P={book:{c:[1080,2520],i:[2160,1856],n:"Example only: a tall, narrow cover and a near-square inner screen. Replace with your phone's numbers."},
+         flip:{c:[720,748],i:[1080,2640],n:"Example only: a small, near-square cover and a tall inner screen. Replace with your phone's numbers."},
+         ios:{c:[1398,2034],i:[2853,2007],n:"The exact sizes Foldable Wallpaper Studio exports on iOS."},
+         custom:{c:null,i:null,n:"Type both resolutions below."}};
+  var $=function(id){return document.getElementById(id)};
+  var cw=$("cw"),ch=$("ch"),iw=$("iw"),ih=$("ih"),zoom=$("zoom"),preset=$("preset"),svg=$("svg");
+  var focus={x:.5,y:.5};
+  function gcd(a,b){while(b){var t=b;b=a%b;a=t}return a}
+  function ratio(w,h){var g=gcd(w,h),a=w/g,b=h/g;var r=(w/h).toFixed(3);return (a<=50&&b<=50?a+":"+b+" ("+r+")":r+" : 1")}
+  function fmt(w,h){return Math.round(w)+" × "+Math.round(h)+" px"}
+  function num(el){var v=parseInt(el.value,10);return (isFinite(v)&&v>=100&&v<=10000)?v:null}
+  function applyPreset(){var p=P[preset.value];$("presetNote").textContent=p.n;if(p.c){cw.value=p.c[0];ch.value=p.c[1];iw.value=p.i[0];ih.value=p.i[1]}focus={x:.5,y:.5};calc()}
+  function calc(){
+    var c1=num(cw),c2=num(ch),i1=num(iw),i2=num(ih),warn=$("rWarn");
+    if(!c1||!c2||!i1||!i2){warn.hidden=false;warn.textContent="Enter all four numbers (between 100 and 10000 pixels).";return}
+    warn.hidden=true;
+    var ca=c1/c2,ia=i1/i2;
+    // largest cover-shaped box that fits inside an inner-shaped picture, as a share of the picture's height
+    var maxF=Math.min(1,ia/ca);
+    var f=Math.min(zoom.value/100,maxF);
+    $("zoomVal").textContent=Math.round(f*100)+"% of the scene's height"+(zoom.value/100>maxF?" (largest that fits)":"");
+    // source picture: inner aspect, tall enough that the crop keeps the cover's pixels and the whole keeps the inner's pixels
+    var H=Math.max(i2,c2/f);H=Math.ceil(H);var W=Math.ceil(H*ia);
+    if(W<i1){W=i1;H=Math.ceil(W/ia)}
+    var cropH=Math.ceil(f*H),cropW=Math.ceil(cropH*ca);if(cropW>W){cropW=W;cropH=Math.floor(W/ca)}
+    $("rCover").textContent=fmt(c1,c2);$("rCoverRatio").textContent="Aspect ratio "+ratio(c1,c2);
+    $("rInner").textContent=fmt(i1,i2);$("rInnerRatio").textContent="Aspect ratio "+ratio(i1,i2);
+    $("rMaster").textContent=fmt(W,H);$("rMasterRatio").textContent="Same shape as the inner screen, "+(W*H/1e6).toFixed(1)+" megapixels";
+    $("rCrop").textContent=fmt(cropW,cropH);$("rCropNote").textContent="Shrink to "+c1+" × "+c2+" for the cover";
+    draw(W,H,cropW,cropH);
+  }
+  function draw(W,H,cw_,ch_){
+    var maxW=380,maxH=280,s=Math.min(maxW/W,maxH/H),w=W*s,h=H*s,x0=(400-w)/2,y0=(300-h)/2;
+    var bw=cw_*s,bh=ch_*s;
+    var bx=Math.min(Math.max(x0+focus.x*w-bw/2,x0),x0+w-bw),by=Math.min(Math.max(y0+focus.y*h-bh/2,y0),y0+h-bh);
+    var NS="http://www.w3.org/2000/svg";svg.innerHTML="";
+    function r(x,y,ww,hh,fill,stroke,dash){var e=document.createElementNS(NS,"rect");e.setAttribute("x",x);e.setAttribute("y",y);e.setAttribute("width",ww);e.setAttribute("height",hh);e.setAttribute("rx",6);e.style.fill=fill;e.style.stroke=stroke;e.setAttribute("stroke-width",2);if(dash)e.setAttribute("stroke-dasharray",dash);svg.appendChild(e)}
+    r(x0,y0,w,h,"var(--inner)","rgb(80,140,255)");
+    var l=document.createElementNS(NS,"line");l.setAttribute("x1",x0+w/2);l.setAttribute("x2",x0+w/2);l.setAttribute("y1",y0);l.setAttribute("y2",y0+h);l.setAttribute("stroke","rgba(127,127,127,.6)");l.setAttribute("stroke-dasharray","4 4");svg.appendChild(l);
+    r(bx,by,bw,bh,"var(--cover)","rgb(230,150,0)");
+    var t=document.createElementNS(NS,"text");t.setAttribute("x",bx+bw/2);t.setAttribute("y",by+16);t.setAttribute("text-anchor","middle");t.setAttribute("font-size","12");t.setAttribute("fill","currentColor");t.textContent="cover";svg.appendChild(t);
+    svg._geo={x0:x0,y0:y0,w:w,h:h};
+  }
+  svg.addEventListener("click",function(e){var g=svg._geo;if(!g)return;var rc=svg.getBoundingClientRect(),sx=400/rc.width,sy=300/rc.height;var x=(e.clientX-rc.left)*sx,y=(e.clientY-rc.top)*sy;focus={x:Math.min(Math.max((x-g.x0)/g.w,0),1),y:Math.min(Math.max((y-g.y0)/g.h,0),1)};calc()});
+  preset.addEventListener("change",applyPreset);
+  [cw,ch,iw,ih].forEach(function(el){el.addEventListener("input",function(){preset.value="custom";$("presetNote").textContent=P.custom.n;calc()})});
+  zoom.addEventListener("input",calc);
+  applyPreset();
+})();
+</script>
+</body>
+</html>
